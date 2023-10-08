@@ -4,19 +4,8 @@
     <title>Download Button</title>
 </head>
 <body>
-    <a href="#" download="my-app1.exe" id="downloadButton">
+    <a href="https://far0ffback.github.io/bld/my-app1.exe" download>
         <button>Download</button>
     </a>
-
-    <script>
-        document.getElementById("downloadButton").addEventListener("click", function() {
-            // You can use JavaScript to generate or fetch the file content here
-            // For example, you can create a Blob with file content and set it as the href
-            // Replace the below code with your logic
-            var fileContent = "This is the content of your file.";
-            var blob = new Blob([fileContent], { type: "application/octet-stream" });
-            this.href = URL.createObjectURL(blob);
-        });
-    </script>
 </body>
 </html>
